@@ -4,7 +4,7 @@ let string = '';
 let arr = Array.from('button');
 arr.forEach(button =>{
 button.addEventListener('click',(e)=>{
-  if(e.taget.innerHTML === '='){
+  if(e.target.innerHTML === '='){
     string = eval(string);
     input.value = string;
   }
@@ -13,7 +13,7 @@ button.addEventListener('click',(e)=>{
     input.value = string;
   }
   else{
-    string += e.taget.innerHTML;
+    string += e.target.innerHTML;
     input.value = string;
   }
 });
